@@ -1,0 +1,137 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header{
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__content {
+    padding-right: 60px;
+    display: flex;
+    float: right;
+    }
+        & h3{
+            margin-right: 140px;
+            font-weight: 400;
+        }
+    &__inner{
+    float: left;
+    max-width: 750px;
+        &-menu{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+            a{
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+        .menu{
+        display: contents;
+        margin: 0;
+        padding: 0;
+        }
+        &-title{
+            padding-bottom: 140px;
+                h1{
+                font-weight: 400;
+                        span{
+                    font-weight: 700;
+                }
+            }   
+        }
+        &-subtitle a{
+            font-size: 30px;
+            padding: 20px;
+            background: rgba(167, 191, 108, 0.3);
+        }
+    }
+    a {
+        color: $green;  
+    }
+    .logo{
+        padding: 60px 0;
+    }
+}
+
+.aside{
+    display: flex;
+    justify-content: space-between;
+    &__content{
+        text-align: left;
+        padding-top: 170px;
+        padding-left: 100px;
+        max-width: 550px;
+        &-title{
+            font-size: 20px;
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 50px;
+            color: $green;
+        }
+        &{
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+        }
+    }
+}
+
+.group3{
+    background: rgba(167, 191, 108, 0.3);
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        &-item{
+            padding: 100px 30px;
+            &-title{
+                margin-top: 20px;
+                font-size: 16px;
+                font-family: 'Dancing Script', cursive;
+                margin-bottom: 50px;
+                color: #fff;
+            }
+            &{
+                font-weight: 100;
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.container{
+    background: rgba(167, 191, 108, 0.3);
+    .menu-title{
+        text-align: center;
+        h3{
+            font-weight: 700;
+            margin-top: 30px;
+            font-size: 26px;
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 20px;
+            
+        }
+        h2{
+            font-size: 36px;;
+            font-weight: 100;
+            color: #fff;
+        }
+    }
+    .menu__content{
+        min-width: 300px;
+        min-height: 350px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        &__inner{
+            
+        }
+    }
+}
+
+
+@import "media";
