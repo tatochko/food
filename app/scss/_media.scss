@@ -1,0 +1,20 @@
+@media (max-width: 700px){
+
+    .header{
+        &__top{
+            .menu{
+                .header__btn{
+                    display: block;
+                }
+                ul{
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin-top: 20px;
+                    z-index: 50;
+                }
+            }
+        }
+    }
+}
