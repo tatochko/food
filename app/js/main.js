@@ -33,12 +33,9 @@ $(function(){
     
     Menu.init();
 
+
     $('.header__btn-global').on('click', function() {
-        $('.menu ul').slideToggle(300, function(){
-            if( $(this).css('display') === "none"){
-                $(this).removeAttr('style');
-            }
-        });
+        $('.menu ul').slideToggle();
 
     });
     
