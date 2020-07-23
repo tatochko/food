@@ -99,12 +99,14 @@
 .overlay{
     position: absolute;
     left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 10;
+    img{
+        width: 100%;
+    }
 }
 
 .aside{
+    position: relative;
     display: flex;
     justify-content: space-between;
     &__content{
@@ -124,6 +126,11 @@
             color: #fff;
         }
     }
+    &-img{
+        img{
+            width: 100%;
+        }
+    }
 }
 
 .group3{
@@ -134,10 +141,10 @@
         &-item{
             padding: 100px 30px;
             &-title{
-                margin-top: 20px;
+                padding-top: 20px;
                 font-size: 16px;
                 font-family: 'Dancing Script', cursive;
-                margin-bottom: 50px;
+                padding-bottom: 50px;
                 color: #fff;
             }
             &{
@@ -277,8 +284,13 @@
                         p{
                             font-size: 16px;
                             color: #fff;
-                            padding-bottom: 20px;  
-                            margin: 0;  
+                            padding-bottom: 20px; 
+                            font-weight: 100; 
+                            margin: 0;
+                            span{
+                                font-family: 'Dancing Script', cursive;
+                                font-weight: 400;
+                            }
                         }
                     }
                 }
@@ -301,7 +313,12 @@
                             font-size: 16px;
                             color: #fff;
                             padding-bottom: 20px;  
-                            margin: 0;  
+                            font-weight: 100; 
+                            margin: 0; 
+                            span{
+                                font-family: 'Dancing Script', cursive;
+                                font-weight: 400;
+                            } 
                         }
                     }
                 }

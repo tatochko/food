@@ -1,5 +1,62 @@
-@media (max-width: 700px){
+@media (max-width: 1220px){
+    .aside__content {
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+}
 
+@media (max-width: 1110px){
+    .aside__content{
+        font-size: 14px;
+        padding: 10% 5% 0 5%;
+    }
+    .menu{
+        .container{
+            background-color: #212121;
+            .menu__content{
+                grid-template-columns: 270px 270px;
+                justify-content: center;
+                &__inner{
+                    background: rgba(78,83,66,0.8);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .aside__content{
+        padding: 5% 5% 0 5%;
+        &-title{
+            padding-bottom: 30px;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 880px){
+    .aside{
+        &__content{
+            margin: 0 auto;
+            padding: 5%;
+            text-align: center;
+        }
+        &-img{
+            display: none;
+        }
+    }
+    .group3__inner-item-title {
+        padding-bottom: 30px;
+    }
+    .img{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
     .header{
         &__top{
             .menu{
@@ -21,6 +78,125 @@
                         padding-bottom: 20px;
                         padding-top: 20px;
                         text-align: center;
+                    }
+                }
+            }
+        }
+        &__content{
+            float: none;
+            text-align: center;
+            &-subtitle{
+                margin: 0 25%;
+            }
+        }
+    }
+    .group3__inner {
+        display: block;
+        text-align: center;
+        &-item{
+            padding: 50px 30px;
+            &-title {
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .menu{
+        .container{
+            background-color: #212121;
+            .menu__content{
+                grid-template-columns: 160px 160px;
+                grid-auto-rows: 160px;
+                justify-content: center;
+                &__inner{
+                    background: rgba(78,83,66,0.8);
+                    padding: 0;
+                    &-title{
+                        padding-top: 20px;
+                        font-size: 14px;
+                    }
+                    &-text{
+                        font-size: 10px;
+                    }
+                }
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 515px){
+    .header__content-subtitle{
+        font-size: 20px;
+    }
+    .header__content-title h1 {
+        font-size: 38px;
+    }
+    .group5__inner p {
+        font-size: 14px;
+        padding: 5%;
+    }
+    .discover__inner__items {
+        display: block;
+        &__left{
+            &-item{
+                padding-bottom: 40px;
+                &-text{
+                    h4{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &__right{
+            &-item{
+                padding-bottom: 40px;
+                &-text{
+                    h4{
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .header__content-subtitle{
+        font-size: 16px;
+    }
+    .menu{
+        .container{
+            background-color: #212121;
+            .menu__content{
+                grid-template-columns: 130px 130px;
+                grid-auto-rows: 130px;
+                justify-content: center;
+                &__inner{
+                    background: rgba(78,83,66,0.8);
+                    padding: 0;
+                    &-title{
+                        padding-top: 10px;
+                        font-size: 14px;
+                        padding-bottom: 15px;
+                    }
+                    &-text{
+                        font-size: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+                &-img{
+                    img{
+                        width: 100%;
                     }
                 }
             }
