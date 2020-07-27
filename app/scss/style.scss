@@ -66,6 +66,7 @@
                         color: $green;
                         &:hover{
                             color: #fff;
+                            transition: color .3s ease-out;
                         }
                     }
                 }
@@ -92,12 +93,15 @@
             padding: 20px;
             background: rgba(93, 105, 66, 0.5);
             margin-right: 250px;
-            &::before{
-                background: rgba(2 2 2 / 50%);
-                color: #fff;
-            }
             a{
                 color: $green;
+                &:hover{
+                    color: #fff;
+                    transition: color .5s ease-out;
+                }
+            }
+            &:hover{
+                background: rgba(254, 96, 32, 1);
             }
         }
     }
@@ -353,6 +357,15 @@
 
 .reservation{
     color: #fff;
+    .overlay{
+        background-image: url(../img/overlay.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        position: relative;
+        padding-bottom: 80px;
+    }
     &-title{
         text-align: center;
         h2{
@@ -401,10 +414,14 @@
                 cursor: pointer;
                 outline: none;
                 color: #fff;
+                transition: color .8s ease-out;
+                &:hover{
+                    background: rgba(255, 255, 255, 1);
+                    color: #212121;
+                }
             }
         }
     }
-    padding-bottom: 80px;
 }
 
 .newmenu{
@@ -434,9 +451,11 @@
             background-color: #fff;
             max-width: 339px;
             z-index: 11;
-            box-shadow: 0px 7px 24.3px 2.7px #ff8c51;
             cursor: pointer;
             margin: 0 20px;
+            &:hover{
+                box-shadow: 0px 7px 24.3px 2.7px #ff8c51;
+            }
             &-img{
                 img{
                     width: 100%;
@@ -476,27 +495,17 @@
                         border: 1px solid transparent;
                         transition: all 0.2s;
                         padding-bottom: 28px;
-                        &::before {
+                        &:after {
+                            background-color: #000000;
                             display: block;
-                            position: absolute;
                             content: "";
-                            height: 2px;
-                            width: 0;
-                            background-color: #fcdb5a;
-                            transition: width .5s ease-in-out, left .5s ease-in-out;
-                            left: 50%;
-                            bottom: 0;
+                            height: 3px;
+                            width: 0%;
+                            transition: width .3s ease-in-out;
                         }
-                        ::after {
-                            display: block;
-                            position: absolute;
-                            content: "";
-                            height: 2px;
-                            width: 0;
-                            background-color: #fcdb5a;
-                            transition: width .5s ease-in-out;
-                            left: 50%;
-                            bottom: 0;
+                        &:hover:after,
+                        &:focus:after {
+                            width: 100%;
                         }
                     }
                 }
@@ -541,7 +550,7 @@
                                 color: #212;
                                 background-color: #fff;
                                 border-radius: 20px;
-                                padding: 5px;
+                                padding: 5px;    
                             }
                         }
                         .contacts__twit{
@@ -629,6 +638,10 @@
                 }
                 a{
                     color: #fff;
+                    &:hover{
+                        color: #212;
+                        transition: color .3s ease-out;
+                    }
                 }
             }
         }
