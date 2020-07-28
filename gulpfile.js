@@ -6,6 +6,7 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     del = require('del'),
     autoprefixer = require('gulp-autoprefixer');
+    ghPages = require('gulp-gh-pages');
 
 
 gulp.task('clean', async function(){
@@ -21,6 +22,11 @@ gulp.task('scss', function(){
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./app/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('css', function(){
