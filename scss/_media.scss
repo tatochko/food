@@ -71,6 +71,15 @@
     }
 }
 
+@media (max-width: 880px){
+    .header__content-img{
+        padding-bottom: 50px;
+    }
+    .header__content-title{
+        padding-bottom: 50px;
+    }
+}
+
 @media (max-width: 750px){
     .reservation__form__inner{
         display: block;
